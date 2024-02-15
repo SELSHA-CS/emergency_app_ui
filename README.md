@@ -21,6 +21,3 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![Screenshot_1707231513](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/4ad51fe6-7316-48aa-996d-390e306ab2cf)
-![Screenshot_1707231610](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/1f6079ae-eb97-4a9a-8f59-f96a4253468b)
-![Screenshot_1707393036](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/a2aa1ac5-afaf-4d1a-899d-931ffe3a0891)
