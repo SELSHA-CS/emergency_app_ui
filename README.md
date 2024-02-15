@@ -1,3 +1,9 @@
+<div style="display:flex; justify-content:space-between;">
+    <img src="https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/4ad51fe6-7316-48aa-996d-390e306ab2cf" alt="Screenshot 1" width="30%">
+    <img src="https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/1f6079ae-eb97-4a9a-8f59-f96a4253468b" alt="Screenshot 2" width="30%">
+    <img src="https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/a2aa1ac5-afaf-4d1a-899d-931ffe3a0891" alt="Screenshot 3" width="30%">
+</div>
+
 # emergency_app_ui
 
 A new Flutter project.
