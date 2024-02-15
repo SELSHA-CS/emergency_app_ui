@@ -1,6 +1,3 @@
-![Screenshot_1707393036](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/e85521f7-f27d-401f-b2b1-68fd9e10e6cd)
-![Screenshot_1707231610](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/8716762f-df91-4c89-a08a-050497495db5)
-![Screenshot_1707231513](https://github.com/SELSHA-CS/emergency_app_ui/assets/142321043/e55b63cb-847b-4a82-ba27-0fafcbd89fd2)
 # emergency_app_ui
 
 A new Flutter project.
