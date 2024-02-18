@@ -1,14 +1,16 @@
 import 'package:emergency_app_ui/screens/dummydata.dart';
+import 'package:emergency_app_ui/widgets/bbbar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ContactList extends StatelessWidget {
+  const ContactList({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFEA1C1C),
+        backgroundColor: const Color(0xFFEA1C1C),
         title: Center(
           child: Text("EMERGENCY CONTACT LIST", style: GoogleFonts.poppins(
             color: Colors.white,
@@ -18,7 +20,7 @@ class ContactList extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
-        actions: [
+        actions: const [
           Icon(Icons.add_circle_outline, color: Colors.white, size: 30,),
           SizedBox(width: 10,),
         ],
@@ -40,47 +42,25 @@ class ContactList extends StatelessWidget {
                 fontSize: 15,
               ),),
               subtitle: Text(contact[index]['no']),
-              trailing: Icon(Icons.more_vert),
+              trailing: const Icon(Icons.more_vert),
             ),
           ),
         )),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(
+        shape: const CircleBorder(
           side: BorderSide(width: 150)
         ),
-        backgroundColor: Color(0xFFEA1C1C),
+        backgroundColor: const Color(0xFFEA1C1C),
         onPressed: () {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => ContactList())
+            MaterialPageRoute(builder: (context) => const ContactList())
           );
         },
-        child: Icon(
-          Icons.ac_unit,
-          color: Colors.white,
-        ),
+        child: const Icon(Icons.ac_unit, color: Colors.white),
         elevation: 0.0,
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 18.0),
-          child: Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Icon(Icons.home),
-              Icon(Icons.calendar_month),
-              // Padding(
-              //   padding: const EdgeInsets.only(top: 28.0),
-              //   child: Text('USE CARD'),
-              // ),
-              Icon(Icons.folder),
-              Icon(Icons.person_outline)
-            ],
-          ),
-        ),
-        color: Color.fromARGB(255, 219, 214, 214),
-      ),
+      bottomNavigationBar: bbBar(),
     );
   }
 }

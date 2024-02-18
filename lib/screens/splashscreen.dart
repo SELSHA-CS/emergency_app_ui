@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 void main(){
   runApp(
-    MaterialApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     ),
@@ -19,12 +19,11 @@ class SplashScreen extends StatelessWidget {
       body: Stack(
         children: [
           Positioned(
-            top: 0,
-            left: 0,
+            top: 0, left: 0,
             child: Container(
               height: 400,
               width: MediaQuery.of(context).size.width,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/emergency_images/1.jpg"),
                   fit: BoxFit.cover,
@@ -37,38 +36,37 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 150,
-            left: 50,
+            bottom: 150, left: 50,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text("EMERGENCY", style: GoogleFonts.poppins(
-                  color: Color(0xFFEA1C1C),
+                  color: const Color(0xFFEA1C1C),
                   fontWeight: FontWeight.bold,
                   fontSize: 30
                 ),),
                 Text("ASSISTANCE FOR", style: GoogleFonts.poppins(
-                  color: Color(0xFFEA1C1C),
+                  color: const Color(0xFFEA1C1C),
                   fontWeight: FontWeight.bold,
                   fontSize: 30
                 ),),
                 Text("CUSTOMERS", style: GoogleFonts.poppins(
-                  color: Color(0xFFEA1C1C),
+                  color: const Color(0xFFEA1C1C),
                   fontWeight: FontWeight.bold,
                   fontSize: 30
                 ),),
                 Flexible(
                   child: Container(
-                    width: MediaQuery.of(context).size.width - 100, // Adjust the width as needed
+                    width: MediaQuery.of(context).size.width - 100,
                     child: Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
-                        color: Color.fromARGB(249, 99, 96, 96),
+                        color: const Color.fromARGB(249, 99, 96, 96),
                         fontSize: 15,
                       ),
                       maxLines: 2,
-                      overflow: TextOverflow.visible, // Set overflow to visible
+                      overflow: TextOverflow.visible, 
                     ),
                   ),
                 ),
@@ -76,15 +74,14 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 20,
-            left: 50,
+            bottom: 20, left: 50,
             child: MaterialButton(
               onPressed: (){
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => HomePage())
                 );
               },
-              color: Color(0xFFEA1C1C),
+              color: const Color(0xFFEA1C1C),
               minWidth: 300,
               height: 50,
               shape: RoundedRectangleBorder(
@@ -95,8 +92,8 @@ class SplashScreen extends StatelessWidget {
                   Text("Let's get started", style: GoogleFonts.poppins(
                     color: Colors.white
                   ),),
-                  SizedBox(width: 10,),
-                  Icon(Icons.arrow_forward, color: Colors.white,),
+                  const SizedBox(width: 10,),
+                  const Icon(Icons.arrow_forward, color: Colors.white,),
                 ],
               ),
             ),
