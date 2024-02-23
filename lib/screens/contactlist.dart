@@ -18,7 +18,10 @@ class ContactList extends StatelessWidget {
           ),),
         ),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20),
+          ),
         ),
         actions: const [
           Icon(Icons.add_circle_outline, color: Colors.white, size: 30,),

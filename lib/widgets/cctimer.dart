@@ -1,4 +1,5 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+import 'package:emergency_app_ui/screens/callscreen.dart';
 import 'package:flutter/material.dart';
 
 class CcTimer extends StatelessWidget {
@@ -9,7 +10,7 @@ class CcTimer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircularCountDownTimer(
-      duration: 10,
+      duration: 5,
       initialDuration: 0,
       controller: CountDownController(),
       width: MediaQuery.of(context).size.width / 2,
@@ -23,7 +24,7 @@ class CcTimer extends StatelessWidget {
       strokeCap: StrokeCap.round,
       textStyle: const TextStyle(
         fontSize: 33.0, color: Color(0xFFEA1C1C), fontWeight: FontWeight.bold),
-      textFormat: CountdownTextFormat.S,
+      textFormat: CountdownTextFormat.MM_SS,
       isReverse: false,
       isReverseAnimation: false,
       isTimerTextShown: true,
@@ -33,6 +34,9 @@ class CcTimer extends StatelessWidget {
       },
       onComplete: () {
         debugPrint('Countdown Ended');
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const CallScreen())
+        );
       },
       onChange: (String timeStamp) {
         debugPrint('Countdown Changed $timeStamp');

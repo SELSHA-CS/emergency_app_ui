@@ -2,14 +2,6 @@ import 'package:emergency_app_ui/screens/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main(){
-  runApp(
-    const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-    ),
-  );
-}
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
