@@ -10,7 +10,7 @@ class CallScreen extends StatelessWidget {
       backgroundColor: const Color.fromARGB(190, 0, 0, 0),
       body: Stack(
         children: [
-          Positioned(
+          const Positioned(
             top: 150,
             left: 100,
             child: Column(
@@ -26,7 +26,7 @@ class CallScreen extends StatelessWidget {
               ],
             ),
           ),
-          Positioned(
+          const Positioned(
             top: 300,
             left: 70,
             child: Column(
@@ -83,10 +83,10 @@ class CallScreen extends StatelessWidget {
             child: InkWell(
               onTap: (){
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => ContactList())
+                  MaterialPageRoute(builder: (context) => const ContactList())
                 );
               },
-              child: CircleAvatar(
+              child: const CircleAvatar(
                 radius: 35,
                 backgroundColor: Colors.red,
                 child: Icon(Icons.call_end, color: Colors.white, size: 30,),

@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Positioned.fill(
             top: 400,
-            child: Container(
+            child: SizedBox(
               child: ListView.builder(
                 shrinkWrap: true,
                 itemCount: 4,
@@ -68,8 +68,8 @@ class _HomePageState extends State<HomePage> {
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
                       ),),
-                      subtitle: Text("408-747-7238"),
-                      trailing: CircleAvatar(
+                      subtitle: const Text("408-747-7238"),
+                      trailing: const CircleAvatar(
                         backgroundColor: Color(0xFF87AF23),
                         child: Icon(Icons.call, color: Colors.white,),
                       ),
@@ -83,22 +83,22 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(
+        shape: const CircleBorder(
           side: BorderSide(width: 150)
         ),
-        backgroundColor: Color(0xFFEA1C1C),
+        backgroundColor: const Color(0xFFEA1C1C),
         onPressed: () {
           Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => ContactList())
+            MaterialPageRoute(builder: (context) => const ContactList())
           );
         },
-        child: Icon(
+        elevation: 0.0,
+        child: const Icon(
           Icons.ac_unit,
           color: Colors.white,
         ),
-        elevation: 0.0,
       ),
-      bottomNavigationBar: bbBar()
+      bottomNavigationBar: const bbBar()
     );
   }
 }

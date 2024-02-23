@@ -8,6 +8,7 @@ class bbBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const BottomAppBar(
+      color: Color.fromARGB(255, 219, 214, 214),
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 18.0),
         child: Row(
@@ -21,7 +22,6 @@ class bbBar extends StatelessWidget {
           ],
         ),
       ),
-      color: Color.fromARGB(255, 219, 214, 214),
     );
   }
 }

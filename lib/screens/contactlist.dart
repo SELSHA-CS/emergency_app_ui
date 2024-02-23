@@ -17,7 +17,7 @@ class ContactList extends StatelessWidget {
             fontSize: 20,
           ),),
         ),
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(
             bottomLeft: Radius.circular(20),
             bottomRight: Radius.circular(20),
@@ -60,10 +60,12 @@ class ContactList extends StatelessWidget {
             MaterialPageRoute(builder: (context) => const ContactList())
           );
         },
-        child: const Icon(Icons.ac_unit, color: Colors.white),
         elevation: 0.0,
+        child: const Icon(
+          Icons.ac_unit, 
+          color: Colors.white),
       ),
-      bottomNavigationBar: bbBar(),
+      bottomNavigationBar: const bbBar(),
     );
   }
 }

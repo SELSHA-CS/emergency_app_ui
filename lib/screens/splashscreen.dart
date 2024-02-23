@@ -48,7 +48,7 @@ class SplashScreen extends StatelessWidget {
                   fontSize: 30
                 ),),
                 Flexible(
-                  child: Container(
+                  child: SizedBox(
                     width: MediaQuery.of(context).size.width - 100,
                     child: Text(
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
@@ -70,7 +70,7 @@ class SplashScreen extends StatelessWidget {
             child: MaterialButton(
               onPressed: (){
                 Navigator.of(context).pushReplacement(
-                  MaterialPageRoute(builder: (context) => HomePage())
+                  MaterialPageRoute(builder: (context) => const HomePage())
                 );
               },
               color: const Color(0xFFEA1C1C),
